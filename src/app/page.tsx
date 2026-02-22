@@ -1,0 +1,3 @@
+import { Card } from '@/components/ui/card';
+import Link from 'next/link';
+export default function Home(){return <main className='p-10 space-y-8'><section className='text-center space-y-4'><h1 className='text-6xl font-bold bg-gradient-to-r from-purple-400 to-cyan-300 bg-clip-text text-transparent'>HTTPBot</h1><p>Vibrant Postman-first API workspace.</p><div className='space-x-3'><Link href='/login'>Login</Link><Link href='/signup'>Sign up</Link></div></section><section className='grid md:grid-cols-3 gap-4'>{['Builder','History','Environments'].map(x=><Card key={x}><h3 className='font-semibold'>{x}</h3><p className='text-muted-foreground'>Polished workflows and glassmorphism UI.</p></Card>)}</section></main>}
